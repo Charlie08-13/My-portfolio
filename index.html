@@ -25,7 +25,7 @@
       <h1>Hi, It's <span id="typewriter">ASHWINI KASHYAP</span></h1>
 
       <h2>I'm a Fullstack Web Developer UI/UX designer</h2>
-      <p>I am a student of Institute of Engineering and Technology Bundelkhand Jhansi</p>
+      <p>I am a student of Institute of Engineering and Technology Bundelkhand University Jhansi</p>
 
       <div class="socials">
         <a href="https://www.linkedin.com/in/ashwini-kashyap-83104a360">In</a>
@@ -50,7 +50,7 @@
     <div class="services-grid">
       <div class="service-card">
         <h3>Frontend Designer</h3>
-        <p>I can design responsive and visually appealing web pages, along with creating custom layouts with HTML, CSS, and JavaScript.</p>
+        <p>I can design responsive and visually appealing web pages, along with creating custom layouts with HTML, CSS,  JavaScript and Figma.</p>
       </div>
       <div class="service-card">
         <h3>Fullstack Web Developer</h3>
@@ -92,22 +92,22 @@
       <div class="edu-year">2024-28</div>
       <div class="edu-card">
         <h3>GRADUATION </h3>
-        <p>Currently I am pursuing Bachelor of Technology in Computer Science from I.E.T Bundelkhand Jhansi </p>
+        <p>Currently I am pursuing Bachelor of Technology in Computer Science from I.E.T Bundelkhand University ,Jhansi </p>
       </div>
     </div>
   </div>
 </section>
 
-
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <h2>Contact <span>Me</span></h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone Number">
-      <input type="text" placeholder="Requirement">
-      <textarea placeholder="Your Message..." rows="5" required></textarea>
+    <!-- IMPORTANT: added action & name attributes -->
+    <form class="contact-form" action="/send" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <input type="text" name="requirement" placeholder="Requirement">
+      <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -129,6 +129,16 @@
 
     <p>&copy; Ashwini Kashyap | All Rights Reserved.</p>
   </footer>
-   <script src="app.js"></script>
+
+  <!-- Typewriter + Backend Script -->
+  <script src="app.js"></script>
+
+  <!-- 3D Robot Spline -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js"></script>
+  <spline-viewer class="robot" url="https://prod.spline.design/RButWdR9KiUvSQjX/scene.splinecode"></spline-viewer>
+
+  <!-- Final Thank You -->
+  <h1 class="last">THANKS FOR VISITING..</h1>
+
 </body>
 </html>
