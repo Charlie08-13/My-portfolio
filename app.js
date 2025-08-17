@@ -56,15 +56,15 @@ app.post("/send", (req, res) => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "your-email@gmail.com",       // your email
-      pass: "your-app-password"           // Gmail app password
+      user: "ashwini2006kashyap@gmail.com",       // your email
+      pass: "lzwu-muta-cftg-rtnk",          // Gmail app password
     }
   });
 
   // Mail details
   let mailOptions = {
     from: email,
-    to: "your-email@gmail.com",          // where you want to receive mails
+    to: "ashwini2006kashyap@gmail.com",          // where you want to receive mails
     subject: `New Contact Form Message from ${name}`,
     text: `
       Name: ${name}
@@ -91,3 +91,4 @@ app.post("/send", (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
+
